@@ -1,10 +1,95 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
 
 .ratingCard {
     display: block;
+    background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
+    width: 85%;
+    margin: 40% auto 0 auto;
+    border-radius: 15px;
+    padding: 20px;
+    color: hsl(217, 12%, 63%);
+}
+
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin: 10px 0px;
+    letter-spacing: 0.5px;
+}
+
+p {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.starIcon > img {
+    background-color: hsla(216, 12%, 54%, 0.1);
+    padding: 12.5px;
+    border-radius: 30px;
+}
+
+input {
+    display: none;
+}
+
+form {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form > div {
+    background-color: hsla(216, 12%, 54%, 0.1);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 25px;
+}
+
+#submitBtn {
+    background-color: hsl(25, 97%, 53%);
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    border-radius: 25px;
+    color:hsl(0, 0%, 100%);
+    letter-spacing: 1px;
 }
 
 .thankYouCard {
     display: none;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    color:hsl(0, 0%, 100%);
+    padding-bottom: 15px;
+}
+
+.attribution > span {
+    padding: 10px;
+}
+
+.attribution a {
+    text-decoration-color: hsla(0, 0%, 100%, 0.3);
+    color:hsl(0, 0%, 100%);
 }
