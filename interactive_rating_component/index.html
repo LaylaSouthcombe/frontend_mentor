@@ -8,30 +8,41 @@
   
   <title>Frontend Mentor | Interactive rating component</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+  <script defer src="./index.js"></script>
 </head>
 <body>
 
   <!-- Rating state start -->
-
-  How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated 
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit
+  <div class="rattingCard">
+    <div class="startIcon">
+      <img src="./images/icon-star.svg" alt="">
+    </div>
+    <h1>How did we do?</h1>
+    <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our offering!</p>
+    <ul class="ratingNums">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+    </ul>
+    <div class="submitBtn">
+      <p>Submit</p>
+    </div>
+  </div>
 
   <!-- Rating state end -->
 
   <!-- Thank you state start -->
-
-  You selected <!-- Add rating here --> out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
+  <div class="thankYouCard">
+    <div class="thankYouIcon">
+      <img src="./images/illustration-thank-you.svg" alt="">
+    </div>
+    <p id="feedBackString">You selected <!-- Add rating here --> out of 5</p>
+    <h1>Thank you!</h1>
+    <p> We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in touch!</p>
+  </div>
 
   <!-- Thank you state end -->
 
