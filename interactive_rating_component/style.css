@@ -60,6 +60,17 @@ form > div {
     border-radius: 25px;
 }
 
+form > div:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);;
+}
+
+.activeInput {
+    background-color: hsl(217, 12%, 63%);
+    color:hsl(0, 0%, 100%);
+}
+
+
 #submitBtn {
     background-color: hsl(25, 97%, 53%);
     font-size: 15px;
@@ -69,6 +80,11 @@ form > div {
     border-radius: 25px;
     color:hsl(0, 0%, 100%);
     letter-spacing: 1px;
+}
+
+#submitBtn:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
 }
 
 .thankYouCard {
@@ -87,7 +103,7 @@ form > div {
 }
 
 .attribution > span {
-    padding: 10px;
+    padding: 5px;
 }
 
 .attribution a {
