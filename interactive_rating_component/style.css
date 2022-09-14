@@ -15,9 +15,16 @@ body {
 .ratingCard,
 .thankYouCard {
     display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
     background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
-    width: 85%;
-    margin: 40% auto 0 auto;
+    max-width: 350px;
     border-radius: 15px;
     padding: 20px;
     color: hsl(217, 12%, 63%);
@@ -134,4 +141,11 @@ form > div:hover {
 
 .thankYouCard > h2 {
     margin: 20px 0px 15px 0px;
+}
+
+@media screen and (max-width:375px){
+    .ratingCard,
+    .thankYouCard {
+    width: 85%;
+    }
 }
