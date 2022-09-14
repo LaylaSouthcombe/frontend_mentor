@@ -12,7 +12,8 @@ body {
     background-color: black;
 }
 
-.ratingCard {
+.ratingCard,
+.thankYouCard {
     display: block;
     background-image: linear-gradient(hsl(213, 19%, 18%), hsl(216, 12%, 8%));
     width: 85%;
@@ -81,7 +82,7 @@ form > div {
     bottom: 0;
     width: 100%;
     justify-content: space-between;
-    color:hsl(0, 0%, 100%);
+    color:hsla(0, 0%, 100%, 0.3);
     padding-bottom: 15px;
 }
 
@@ -91,5 +92,30 @@ form > div {
 
 .attribution a {
     text-decoration-color: hsla(0, 0%, 100%, 0.3);
-    color:hsl(0, 0%, 100%);
+    color:hsla(0, 0%, 100%, 0.3);
+}
+
+.thankYouCard {
+    text-align: center;
+    padding: 25px;
+}
+
+.thankYouIcon {
+    margin: 5px 0px 20px 0px;
+}
+.thankYouIcon > img {
+    width: 50%;
+}
+#feedBackString {
+    color:hsla(25, 97%, 53%, 0.6);
+    background-color: hsla(0, 0%, 100%, 0.1);
+    padding: 0px 10px;
+    width:fit-content;
+    border-radius: 25px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+
+.thankYouCard > h2 {
+    margin: 20px 0px 15px 0px;
 }
