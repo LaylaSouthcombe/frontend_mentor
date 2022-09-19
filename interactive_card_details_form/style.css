@@ -1,34 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 * {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-size: 18px; */
 }
 
 .cardMockup,
 .cvcMockup {
     background-repeat: no-repeat;
-    background-size: cover;
-    font-size: 18px;
     color: hsl(0, 0%, 100%);
     border-radius: 5px;
     padding:15px;
     width: 280px;
-    height: 165px;
+    height: 155px;
 }
 .cardMockup {
     background-image: url(./images/bg-card-front.png);
+    background-size: 110%;
     margin-left: 20px;
-    margin-top: 80px;
+    margin-top: 107.5px;
+}
+
+.cardMockup > img {
+    width: 60px;
+    padding-bottom: 35px;
+}
+
+.cardNumOutput {
+    text-align:center;
+    font-size: 20px;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+    text-shadow: 0.25px 0.25px black;
+}
+
+.cardNameAndDate {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.75;
+    letter-spacing: 0.75px;
+    text-shadow: 0.25px 0.25px black;
 }
 .cvcMockup {
     background-image: url(./images/bg-card-back.png);
+    background-size: cover;
     position: absolute;
     top: 20px;
     left: 70px;
     z-index: -1;
+}
+
+.cardCVCOutput {
+    margin-left: 210px;
+    margin-top: 52.5px;
+    font-size: 14px;
+    letter-spacing: 1px;
 }
 
 .completeDiv {
