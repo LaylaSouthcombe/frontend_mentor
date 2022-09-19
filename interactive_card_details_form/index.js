@@ -16,7 +16,7 @@ cardNumberInput.addEventListener("keypress", () => {
 const inputs = document.querySelectorAll('input[type="text"]')
 const numberInputs = [].slice.call(inputs, 1)
 
-var reg = new RegExp('^[0-9 ]+$');
+let reg = new RegExp('^[0-9 ]+$');
 numberInputs.forEach(x => {
     x.addEventListener("input", (e) => {
         if(!reg.test(e.target.value)){
@@ -31,7 +31,6 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     const data = new FormData(e.target);
     const inputArray = [...data.entries()]
-    console.log(inputArray)
     cardNumOutput.textContent = inputArray[1][1]
     cardNameOutput.textContent = inputArray[0][1]
     cardExpDateOutput.textContent = `${inputArray[2][1]}/${inputArray[3][1]}`

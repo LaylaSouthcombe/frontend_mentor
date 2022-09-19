@@ -38,7 +38,7 @@ Users should be able to:
 
 ### What I learned
 
-Easy selection of checked inputs through query selector
+Easy selection of checked inputs through query selector.
 
 ```js
 const checkValue = document.querySelector('input[name="ratingNum"]:checked')
