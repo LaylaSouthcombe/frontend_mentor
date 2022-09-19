@@ -35,7 +35,7 @@ body {
 }
 
 .cardNumOutput {
-    text-align:center;
+    text-align: left;
     font-size: 18px;
     word-spacing: 2px;
     letter-spacing: 2px;
@@ -71,6 +71,32 @@ body {
 
 .completeDiv {
     display: none;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 40px;
+}
+.completeDiv > h2 {
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size: 28px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.completeDiv > p {
+    color: hsl(279, 6%, 55%);
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.completeDiv > .continue {
+    margin-top: 30px;
+    font-size: 18px;
+    background-color: hsl(278, 68%, 11%);
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 form {
