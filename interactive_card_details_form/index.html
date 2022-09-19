@@ -29,11 +29,13 @@
     <input type="text" name="cardName" id="cardNameInput" placeholder="e.g. Jane Appleseed" required>
     <label for="cardNumber">Card Number</label>
     <input type="text" name="cardNumber" id="cardNumberInput" placeholder="e.g. 1234 5678 9123 0000" minlength="16" maxlength="19" required>
-    <label for="expDate">Exp. Date (MM/YY)</label>
-    <input type="text" name="expDate" id="expMonth" placeholder="MM" minlength="2" maxlength="2" required>
-    <input type="text" name="expDate" id="expYear" placeholder="YY" minlength="2" maxlength="2" required>
-    <label for="cvc">CVC</label>
-    <input type="text" name="cvc" id="cvcInput" placeholder="e.g. 123" minlength="3" maxlength="3" required>
+    <div class="expCVCInput">
+        <label for="expDate">Exp. Date (MM/YY)</label>
+        <input type="text" name="expDate" id="expMonth" placeholder="MM" minlength="2" maxlength="2" required>
+        <input type="text" name="expDate" id="expYear" placeholder="YY" minlength="2" maxlength="2" required>
+      <label for="cvc">CVC</label>
+      <input type="text" name="cvc" id="cvcInput" placeholder="e.g. 123" minlength="3" maxlength="3" required>
+      </div>
     <input type="submit" value="Confirm">
   </form>
 
