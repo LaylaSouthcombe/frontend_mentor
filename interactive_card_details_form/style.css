@@ -255,4 +255,15 @@ input[type="submit"] {
         font-size: 14px;
     }
 
+    .completeDiv {
+        width: 30%;
+        margin-right: 300px;
+        margin-top: -150px;
+    }
+    
+    .completeDiv > .continue {
+        margin: 40px auto 0px auto;
+        width: 80%;
+    }
+
 }
