@@ -7,16 +7,29 @@
     box-sizing: border-box;
 }
 
-.cardMockup {
-    background-image: url(./images/bg-card-front.png);
+.cardMockup,
+.cvcMockup {
     background-repeat: no-repeat;
     background-size: cover;
     font-size: 18px;
     color: hsl(0, 0%, 100%);
     border-radius: 5px;
     padding:15px;
+    width: 280px;
+    height: 165px;
 }
-
+.cardMockup {
+    background-image: url(./images/bg-card-front.png);
+    margin-left: 20px;
+    margin-top: 80px;
+}
+.cvcMockup {
+    background-image: url(./images/bg-card-back.png);
+    position: absolute;
+    top: 20px;
+    left: 70px;
+    z-index: -1;
+}
 
 .completeDiv {
     display: none;
