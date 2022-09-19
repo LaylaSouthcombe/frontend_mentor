@@ -31,9 +31,10 @@ form.addEventListener("submit", (e) => {
     e.preventDefault()
     const data = new FormData(e.target);
     const inputArray = [...data.entries()]
+    console.log(inputArray)
     cardNumOutput.textContent = inputArray[0][1]
     cardNameOutput.textContent = inputArray[1][1]
-    cardExpDateOutput.textContent = inputArray[2][1]
+    cardExpDateOutput.textContent = `${inputArray[2][1]}/${inputArray[3][1]}`
     cardCVCOutput.textContent = inputArray[3][1]
     const completeDiv = document.querySelector(".completeDiv")
     form.style.display = "none"
