@@ -104,6 +104,7 @@ input {
     outline: none;
     font-size: 18px;
     letter-spacing: 1px;
+    color: hsl(279, 6%, 55%);
 }
 
 label[for="expDate"]{
@@ -139,5 +140,22 @@ input[type="submit"] {
     border: none;
     padding: 15px;
 }
-/* .attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); } */
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    justify-content: space-between;
+    color:hsl(279, 6%, 55%);
+    padding-bottom: 15px;
+}
+
+.attribution > span {
+    padding: 5px;
+}
+
+.attribution a {
+    text-decoration-color:hsl(279, 6%, 55%);
+    color:hsl(279, 6%, 55%);
+}
