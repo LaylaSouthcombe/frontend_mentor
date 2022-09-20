@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.calculator{
+    display: grid;
+    grid-template-columns: 25%;
+    grid-template-areas: 
+    "btn1 btn2 btn3 btn4";
+}
+p {
+    display: inline-block;
+    text-align: center;
+    background-color: aqua;
+    margin: 3px;
+}
