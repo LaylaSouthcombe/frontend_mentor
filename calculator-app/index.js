@@ -13,10 +13,13 @@ let sumStr = ""
 let operator = ""
 let numOne = ""
 let numTwo = ""
+
 calcNums.forEach(x => {
     x.addEventListener("click", (e) => {
-        sumStr += e.target.textContent
-        numTwo += e.target.textContent
+        if(numOne === ""){
+            sumStr += e.target.textContent
+            numTwo += e.target.textContent
+        }
     })
 })
 
@@ -32,33 +35,45 @@ const addOperatorToString = (e) => {
 
 calcOperators.forEach(x => {
     x.addEventListener("click", (e) => {
-        if(!(sumStr.endsWith("*") || sumStr.endsWith("/") ||    sumStr.endsWith("+") || sumStr.endsWith("-"))){
+        if(!(sumStr.endsWith("*") || sumStr.endsWith("/") || sumStr.endsWith("+") || sumStr.endsWith("-")) && (sumStr.includes("*") || sumStr.includes("/") || sumStr.includes("+") || sumStr.includes("-"))){
             numOne = eval(numOne + operator + numTwo).toString()
             sumStr = numOne
             addOperatorToString(e)
             numTwo = ""
-        } else {
-            numOne = sumStr.slice(0, -1)
+        } else if(sumStr.endsWith("*") || sumStr.endsWith("/") || sumStr.endsWith("+") || sumStr.endsWith("-")){
             sumStr = sumStr.slice(0, -1)
             addOperatorToString(e)
+            numOne = numTwo
+            numTwo = ""
+        } else {
+            addOperatorToString(e)
+            numOne = numTwo
             numTwo = ""
         }
+        console.log(numOne)
     })
 })
 
 calcEqual.addEventListener("click", (e) => {
-    if(!(sumStr.endsWith("*") || sumStr.endsWith("/") || sumStr.endsWith("+") || sumStr.endsWith("-"))){
+    if(!(sumStr.includes("*") || sumStr.includes("/") || sumStr.includes("+") || sumStr.includes("-"))){
+        numOne = sumStr
+    } else if(!(sumStr.endsWith("*") || sumStr.endsWith("/") || sumStr.endsWith("+") || sumStr.endsWith("-"))){
         numOne = eval(numOne + operator + numTwo).toString()
     } else {
         numOne = eval(sumStr.slice(0, -1)).toString()
     }
+    console.log(numOne)
 })
 
 
 calcReset.addEventListener("click", (e) => {
-    console.log(e.target.textContent)
+    sumStr = ""
+    operator = ""
+    numOne = ""
+    numTwo = ""
 })
 
 calcDel.addEventListener("click", (e) => {
-    console.log(e.target.textContent)
+    sumStr = sumStr.slice(0, -1)
+    numTwo = numTwo.slice(0, -1)
 })
