@@ -14,11 +14,18 @@
     display: flex;
     flex-direction: column;
 }
+
 .resultsScore {
     width: 100%;
     text-align: center;
     background-color: aqua;
     border-radius: 20px;
+}
+
+.subScore {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .scoreCircle {
